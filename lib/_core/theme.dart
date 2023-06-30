@@ -8,5 +8,8 @@ ThemeData buildThemeData() {
     scaffoldBackgroundColor: kBgColor,
     fontFamily: "SF Pro Text",
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    appBarTheme: const AppBarTheme(
+      centerTitle: true,
+    )
   );
 }
