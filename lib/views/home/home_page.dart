@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/_core/constants.dart';
-import 'package:foodapp/model/demo_data.dart';
 import 'package:foodapp/views/home/widgets/home_appbar.dart';
 import 'package:foodapp/views/home/widgets/image_carousel.dart';
-import 'package:foodapp/views/home/widgets/restaurant_info_medium_card.dart';
+import 'package:foodapp/views/home/widgets/medium_card_scroll_view.dart';
 import 'package:foodapp/views/home/widgets/section_title.dart';
 
 class HomePage extends StatelessWidget {
@@ -26,20 +25,7 @@ class HomePage extends StatelessWidget {
               press: () {},
             ),
           ),
-          SliverToBoxAdapter(
-            child: Row(
-              children: [
-                RestaurantInfoMediumCard(
-                  title: demoMediumCardData[0]['name'],
-                  image: demoMediumCardData[0]['image'],
-                  location: demoMediumCardData[0]['location'],
-                  rating: demoMediumCardData[0]['rating'],
-                  deliveryTime: demoMediumCardData[0]['delivertTime'],
-                  press: () {},
-                ),
-              ],
-            ),
-          ),
+          const MediumCardScrollView(),
         ],
       ),
     );
