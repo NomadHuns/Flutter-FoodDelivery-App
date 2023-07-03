@@ -26,6 +26,20 @@ class HomePage extends StatelessWidget {
             ),
           ),
           const MediumCardScrollView(),
+          SliverPadding(
+            padding: const EdgeInsets.all(defaultPadding),
+            sliver: SliverToBoxAdapter(
+              child: Image.asset("assets/images/Banner.png"),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.all(defaultPadding),
+            sliver: SectionTitle(
+              title: "Best Picks",
+              press: () {},
+            ),
+          ),
+          const MediumCardScrollView(),
         ],
       ),
     );
