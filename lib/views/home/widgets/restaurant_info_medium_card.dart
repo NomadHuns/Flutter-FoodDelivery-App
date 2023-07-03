@@ -45,43 +45,46 @@ class RestaurantInfoMediumCard extends StatelessWidget {
               maxLines: 1,
               style: const TextStyle(color: kBodyTextColor),
             ),
-            DefaultTextStyle(
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 12,
+            _buildCardBottom(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  DefaultTextStyle _buildCardBottom() {
+    return DefaultTextStyle(
+      style: const TextStyle(
+        color: Colors.black,
+        fontSize: 12,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: defaultPadding / 2),
+        child: Row(
+          children: [
+            Container(
+              decoration: const BoxDecoration(
+                color: kActiveColor,
+                borderRadius: BorderRadius.all(Radius.circular(6)),
               ),
-              child: Padding(
-                padding:
-                const EdgeInsets.symmetric(vertical: defaultPadding / 2),
-                child: Row(
-                  children: [
-                    Container(
-                      decoration: const BoxDecoration(
-                        color: kActiveColor,
-                        borderRadius: BorderRadius.all(Radius.circular(6)),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: defaultPadding / 2,
-                        vertical: defaultPadding / 8,
-                      ),
-                      child: Text(
-                        rating.toString(),
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    const Spacer(),
-                    Text("$deliveryTime min"),
-                    const Spacer(),
-                    const CircleAvatar(
-                      radius: 2,
-                      backgroundColor: kBodyTextColor,
-                    ),
-                    const Spacer(),
-                    const Text("Free delivery"),
-                  ],
-                ),
+              padding: const EdgeInsets.symmetric(
+                horizontal: defaultPadding / 2,
+                vertical: defaultPadding / 8,
               ),
-            )
+              child: Text(
+                rating.toString(),
+                style: const TextStyle(color: Colors.white),
+              ),
+            ),
+            const Spacer(),
+            Text("$deliveryTime min"),
+            const Spacer(),
+            const CircleAvatar(
+              radius: 2,
+              backgroundColor: kBodyTextColor,
+            ),
+            const Spacer(),
+            const Text("Free delivery"),
           ],
         ),
       ),
