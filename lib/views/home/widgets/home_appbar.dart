@@ -7,7 +7,8 @@ class HomeAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
+      floating: true,
       elevation: 0,
       title: Column(
         children: [
