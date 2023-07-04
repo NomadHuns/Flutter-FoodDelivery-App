@@ -1,16 +1,15 @@
-# foodapp
+# 배달앱 화면 구현
 
-A new Flutter project.
+## 화면 구성
 
-## Getting Started
+### 해더 이미지 슬라이더
 
-This project is a starting point for a Flutter application.
+![배달앱1](https://github.com/NomadHuns/Flutter-FoodDelivery-App/assets/118786401/3e9fbc07-5a4d-4b73-a735-bfe77820503b)
 
-A few resources to get you started if this is your first Flutter project:
+### 카드 스크롤 뷰
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![배달앱2](https://github.com/NomadHuns/Flutter-FoodDelivery-App/assets/118786401/07fddf01-4ff6-46e4-9a5c-2223ca1755b5)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 슬리버 앱바
+
+![배달앱3](https://github.com/NomadHuns/Flutter-FoodDelivery-App/assets/118786401/d669a99d-dd98-4615-bd6c-094e6ee1b613)
